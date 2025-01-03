@@ -194,7 +194,7 @@
         "kind": 2,
         "importPath": "galeria.views",
         "description": "galeria.views",
-        "peekOfCode": "def index(request):\n    return render(request, 'galeria/index.html')\ndef imagem(request):\n    return render(request, 'galeria/imagem.html')",
+        "peekOfCode": "def index(request):\n    # Adiciona 'range_values' no contexto para o template\n    return render(request, 'galeria/index.html', {'range_values': range(6)})\ndef imagem(request):\n    return render(request, 'galeria/imagem.html')",
         "detail": "galeria.views",
         "documentation": {}
     },
